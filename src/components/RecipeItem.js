@@ -2,12 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const RecipeItem =({id,menuTitle,steps})=>(
+const RecipeItem =({id,menuTitle,ingredient})=>(
     <div>
     <button>
     <Link to={`/edit/${id}`}>
     <h3>{menuTitle}</h3>
-    <p>has ingredient</p>
+    <p>{ingredient}</p>
     </Link>
     </button>
    

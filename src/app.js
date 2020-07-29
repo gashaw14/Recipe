@@ -8,9 +8,9 @@ import visibelRecipe from './selctors/recipe';
 
 
 const store = configStore();
-store.dispatch(addRecipe({menuTitle:'vegiterian',steps:'here is the steps'}));
-store.dispatch(addRecipe({menuTitle:'fish',steps:'how to cook fish'}));
-store.dispatch(addRecipe({menuTitle:'doro wot',steps:'how to cook dorowot'}));
+store.dispatch(addRecipe({menuTitle:'vegiterian',steps:'here is the steps', ingredient:'Rice'}));
+store.dispatch(addRecipe({menuTitle:'fish',steps:'how to cook fish',ingredient:'Pasta'}));
+store.dispatch(addRecipe({menuTitle:'doro wot',steps:'how to cook dorowot',ingredient:'Fish'}));
 
 const state = store.getState();
 const recipe = visibelRecipe(state.recipes,state.filters);

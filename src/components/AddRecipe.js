@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 const AddRecipePage = (props) => (
     <div>
-      <h1>Add Expense</h1>
+      <h1>Add Recipe</h1>
       <RecipeForm
         onSubmit={(recipe) => {
           props.dispatch(addRecipe(recipe));

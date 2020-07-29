@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import RecipeForm from './RecipeForm';
-import {editRecipe} from '../actions/recipe';
+import {editRecipe, removeRecipe} from '../actions/recipe';
+
 
 const EditRecipePage =(props)=>{
     return(
@@ -14,6 +15,12 @@ const EditRecipePage =(props)=>{
              props.history.push('/');
             }}
              />
+             <button
+             onClick ={()=>{
+            props.dispatch(removeRecipe({id:props.recipe.id}))  
+            props.history.push('/');
+             }}
+             >remove</button>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import IngredientList from './IngredientList';
 
 export default class RecipeForm extends React.Component{
 
@@ -8,6 +8,8 @@ super(props);
 this.state={
     menuTitle: props.recipe ? props.recipe.menuTitle:'',
     steps: props.recipe ? props.recipe.steps:'',
+    ingredient: props.recipe ? props.recipe.ingredient:'',
+    checkbox:props.recipe ? props.recipe.checkbox: false,
     error:''
 }
 
@@ -21,6 +23,11 @@ onStepsChange =(e)=>{
  const steps = e.target.value
  this.setState(()=>({steps}))
 }
+onIngredientChange=(e)=>{
+const ingredient = e.target.value;
+this.setState(()=>({ingredient}));
+}
+
 handleSubmit= (e)=>{
 e.preventDefault()
 if(!this.state.menuTitle ){
@@ -29,7 +36,8 @@ this.setState(()=>({error:'please entet menu title and cooking steps'}))
     this.setState(()=>({errors:''}))
     this.props.onSubmit({
         menuTitle: this.state.menuTitle,
-        steps: this.state.steps
+        steps: this.state.steps,
+        ingredient: this.state.ingredient
     })
 }
 }
@@ -50,11 +58,18 @@ render(){
          value={this.state.steps}
          onChange={this.onStepsChange}
          ></textarea>
-         <button>Save</button>
+        <h1>Ingredients</h1>
+        <IngredientList />
+        <input 
+        type='text' 
+        placeholder='add ingredient'
+        value={this.state.ingredient}
+        onChange={this.onIngredientChange}
+        ></input>
+        <button >Add Ingredient</button>
      </form>   
+     
     </div>
     )
 }
-
-
 }

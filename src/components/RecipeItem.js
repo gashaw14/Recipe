@@ -2,12 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const RecipeItem =({id,menuTitle,ingredient})=>(
+const RecipeItem =({id,menuTitle,checkbox})=>(
     <div>
-    <button>
+    <button className='big-button'>
     <Link to={`/edit/${id}`}>
     <h3>{menuTitle}</h3>
-    <p>{ingredient}</p>
+    <p>{checkbox && 'It has Ingredien'}</p>
     </Link>
     </button>
    

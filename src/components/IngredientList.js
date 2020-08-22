@@ -5,17 +5,16 @@ import { connect } from 'react-redux';
 
 const IngredientList = (props)=>(
 <div>
+ 
  {props.recipes.map(recipe=>{
      return <IngredientItem  key={recipe.id} {...recipe} />
      }
      
      )}
      
-     
 </div>
 )
   
-
 const mapStateToProps = (state)=>{
  return{
      recipes: selectRecipe(state.recipes, state.filters)

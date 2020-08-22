@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`no recipe list 1`] = `
+<p>
+  no recipes
+</p>
+`;
+
+exports[`recipe list component 1`] = `
+Array [
+  <RecipeItem
+    checkbox={false}
+    id="1"
+    ingredient="aaa"
+    key="1"
+    menuTitle="VEGI"
+    steps="ttt"
+/>,
+  <RecipeItem
+    checkbox={false}
+    id="2"
+    ingredient="yyyy"
+    key="2"
+    menuTitle="meat"
+    steps="cook"
+/>,
+]
+`;

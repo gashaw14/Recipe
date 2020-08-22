@@ -31,19 +31,21 @@ this.setState(()=>({ingredient}));
 handleSubmit= (e)=>{
 e.preventDefault()
 if(!this.state.menuTitle ){
-this.setState(()=>({error:'please entet menu title and cooking steps'}))
+this.setState(()=>({error:'please enter menu title'}))
 } else{
     this.setState(()=>({errors:''}))
     this.props.onSubmit({
         menuTitle: this.state.menuTitle,
         steps: this.state.steps,
-        ingredient: this.state.ingredient
+        ingredient: this.state.ingredient,
+        checkbox: !this.state.checkbox
     })
 }
 }
+
 render(){
     return(
-    <div>
+    <div className='form'>
       {this.state.error && <p>{this.state.error}</p>}
      <form onSubmit={this.handleSubmit}>
          <input

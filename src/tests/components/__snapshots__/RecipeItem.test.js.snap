@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test recipe item component 1`] = `
+<div>
+  <button>
+    <Link
+      to="/edit/2"
+    >
+      <h3>
+        meat
+      </h3>
+      <p />
+    </Link>
+  </button>
+</div>
+`;

@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default recipe form 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value=""
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value=""
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value=""
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;
+
+exports[`set menu input change recipe form 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value="new value"
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value=""
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value=""
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;
+
+exports[`set step input change recipe form 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value=""
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value="here are steps for recipe"
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value=""
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;
+
+exports[`test invalid recipe form submision 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value=""
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value=""
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value=""
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;
+
+exports[`test invalid recipe form submision 2`] = `
+<div>
+  <p>
+    please enter menu title
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value=""
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value=""
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value=""
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;
+
+exports[`test recipe form with data 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="menu name"
+      type="text"
+      value="meat"
+    />
+    <textarea
+      onChange={[Function]}
+      placeholder="cooking steps"
+      type="text"
+      value="cook"
+    />
+    <h1>
+      Ingredients
+    </h1>
+    <Connect(IngredientList) />
+    <input
+      onChange={[Function]}
+      placeholder="add ingredient"
+      type="text"
+      value="yyyy"
+    />
+    <button>
+      Add Ingredient
+    </button>
+  </form>
+</div>
+`;

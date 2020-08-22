@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test render edit recipe component 1`] = `
+<div>
+  <RecipeForm
+    onSubmit={[Function]}
+    recipe={
+      Object {
+        "checkbox": false,
+        "id": "1",
+        "ingredient": "aaa",
+        "menuTitle": "VEGI",
+        "steps": "ttt",
+      }
+    }
+  />
+  <button
+    onClick={[Function]}
+  >
+    remove
+  </button>
+</div>
+`;

@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import configStore from './store/configStore';
 import {addRecipe} from './actions/recipe';
 import visibelRecipe from './selctors/recipe';
-
+import './firebase/firebase';
 
 const store = configStore();
 store.dispatch(addRecipe({menuTitle:'vegiterian',steps:'here is the steps', ingredient:'Rice'}));
